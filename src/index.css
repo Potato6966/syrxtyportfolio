@@ -8,35 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 224 15% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 224 20% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 224 20% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 224 15% 6%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 280 100% 70%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 224 20% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 195 100% 50%;
+    --accent-foreground: 224 15% 6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 224 20% 20%;
+    --input: 224 20% 12%;
+    --ring: 195 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gaming Design System */
+    --cyber-blue: 195 100% 50%;
+    --cyber-purple: 280 100% 70%;
+    --cyber-pink: 320 100% 70%;
+    --neon-green: 120 100% 50%;
+    
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--cyber-blue)), hsl(var(--cyber-purple)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(224 20% 8%));
+    --gradient-card: linear-gradient(145deg, hsl(224 20% 8% / 0.8), hsl(224 20% 12% / 0.6));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--cyber-blue) / 0.2), hsl(var(--cyber-purple) / 0.2));
+    
+    /* Shadows & Effects */
+    --shadow-cyber: 0 0 30px hsl(var(--cyber-blue) / 0.3);
+    --shadow-glow: 0 10px 40px hsl(var(--cyber-purple) / 0.2);
+    --shadow-card: 0 8px 32px hsl(224 20% 4% / 0.4);
+    
+    /* Animations */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --pulse-duration: 2s;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +77,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 224 15% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 224 20% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 224 20% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 224 15% 6%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 280 100% 70%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 224 20% 12%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 195 100% 50%;
+    --accent-foreground: 224 15% 6%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 224 20% 20%;
+    --input: 224 20% 12%;
+    --ring: 195 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -101,5 +122,57 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(var(--cyber-blue) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--cyber-purple) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--cyber-pink) / 0.05) 0%, transparent 50%);
+  }
+}
+
+@layer utilities {
+  .glow-cyber {
+    box-shadow: var(--shadow-cyber);
+  }
+  
+  .glow-card {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .bg-gradient-cyber {
+    background: var(--gradient-cyber);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-cyber {
+    color: hsl(var(--cyber-blue));
+  }
+  
+  .text-cyber-purple {
+    color: hsl(var(--cyber-purple));
+  }
+  
+  .border-cyber {
+    border-color: hsl(var(--cyber-blue) / 0.3);
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse var(--pulse-duration) cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px hsl(var(--cyber-blue) / 0.2);
+  }
+  to {
+    box-shadow: 0 0 30px hsl(var(--cyber-blue) / 0.4), 0 0 40px hsl(var(--cyber-purple) / 0.2);
   }
 }
