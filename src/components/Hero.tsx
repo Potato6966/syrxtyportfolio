@@ -39,7 +39,7 @@ const Hero = () => {
             
             <p className="text-lg text-muted-foreground">Hi, I'm</p>
             
-            <h1 className="text-6xl lg:text-8xl font-bold bg-gradient-cyber bg-clip-text text-transparent animate-glow">
+            <h1 className="text-6xl lg:text-8xl font-bold text-gradient animate-scale-in">
               Syrxty
             </h1>
             
@@ -110,11 +110,11 @@ const Hero = () => {
           </div>
           
           {/* Floating elements */}
-          <div className="absolute -top-4 -right-4 bg-gradient-cyber rounded-full p-4 shadow-cyber animate-pulse-slow">
+          <div className="absolute -top-4 -right-4 bg-gradient-cyber rounded-full p-4 shadow-cyber animate-float">
             <Zap className="w-8 h-8 text-background" />
           </div>
           
-          <div className="absolute -bottom-4 -left-4 bg-gradient-card backdrop-blur-sm border border-primary/30 rounded-xl p-4 shadow-glow">
+          <div className="absolute -bottom-4 -left-4 bg-gradient-card backdrop-blur-sm border border-primary/30 rounded-xl p-4 shadow-glow animate-slide-up">
             <div className="text-sm font-semibold text-primary">Professional GFX</div>
             <div className="text-xs text-muted-foreground">Gaming Focused</div>
           </div>

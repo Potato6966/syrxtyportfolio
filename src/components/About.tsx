@@ -32,16 +32,16 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Avatar and Info */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left animate-slide-up">
             <div className="relative inline-block mb-8">
-              <div className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-glow">
+              <div className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-glow animate-float">
                 <img 
                   src={avatarImage} 
                   alt="Syrxty Avatar" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-gradient-cyber rounded-full p-3 shadow-cyber">
+              <div className="absolute -bottom-4 -right-4 bg-gradient-cyber rounded-full p-3 shadow-cyber animate-pulse">
                 <Gamepad2 className="w-6 h-6 text-background" />
               </div>
             </div>

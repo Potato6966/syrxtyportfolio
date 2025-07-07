@@ -93,9 +93,10 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className={`relative bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow hover:scale-105 ${
+              className={`relative bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-glow animate-scale-in group ${
                 service.popular ? 'ring-2 ring-primary/50' : ''
               }`}
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               {service.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -153,11 +154,15 @@ const Services = () => {
               { step: "2", title: "Design & Review", desc: "I'll create your custom design and send it for your feedback" },
               { step: "3", title: "Deliver & Support", desc: "Receive your final files with ongoing support for any adjustments" }
             ].map((process, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-gradient-cyber rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-cyber">
+              <div 
+                key={index} 
+                className="text-center animate-slide-up group"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="bg-gradient-cyber rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-cyber group-hover:animate-float">
                   <span className="text-2xl font-bold text-background">{process.step}</span>
                 </div>
-                <h4 className="text-xl font-semibold mb-2 text-primary">{process.title}</h4>
+                <h4 className="text-xl font-semibold mb-2 text-gradient">{process.title}</h4>
                 <p className="text-muted-foreground">{process.desc}</p>
               </div>
             ))}

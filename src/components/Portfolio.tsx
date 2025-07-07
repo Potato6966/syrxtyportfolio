@@ -103,7 +103,8 @@ const Portfolio = () => {
           {portfolioItems.map((item, index) => (
             <Card 
               key={index} 
-              className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow hover:scale-105 group cursor-pointer"
+              className="portfolio-item bg-gradient-card border-primary/20 hover:border-primary/40 group cursor-pointer overflow-hidden"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
@@ -115,7 +116,7 @@ const Portfolio = () => {
                   </Badge>
                 </div>
                 
-                <h4 className="font-semibold mb-3 group-hover:text-primary transition-colors">
+                <h4 className="font-semibold mb-3 group-hover:text-gradient transition-all duration-300">
                   {item.title}
                 </h4>
                 

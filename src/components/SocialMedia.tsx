@@ -87,7 +87,8 @@ const SocialMedia = () => {
           {socialPlatforms.map((platform, index) => (
             <Card 
               key={index} 
-              className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow hover:scale-105 group"
+              className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-glow animate-scale-in group"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
@@ -142,7 +143,8 @@ const SocialMedia = () => {
             {recentPosts.map((post, index) => (
               <Card 
                 key={index} 
-                className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow group cursor-pointer"
+                className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-glow group cursor-pointer animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-3">
