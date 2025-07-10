@@ -36,7 +36,7 @@ const About = () => {
             <div className="relative inline-block mb-8">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-glow animate-float">
                 <img 
-                  src={avatarImage} 
+                  src="/lovable-uploads/0886d7e0-755c-4aaf-b4b5-2ccb87a5b2fb.png"
                   alt="Syrxty Avatar" 
                   className="w-full h-full object-cover"
                 />

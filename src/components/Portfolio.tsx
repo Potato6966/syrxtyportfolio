@@ -64,48 +64,6 @@ const Portfolio = () => {
           </p>
         </div>
 
-        {/* Featured Showcase - Your Main Branding */}
-        <div className="mb-16">
-          <Card className="bg-gradient-card border-primary/20 overflow-hidden shadow-glow">
-            <CardContent className="p-0">
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/80e1ec79-70bd-4921-ac6b-624a1f69b411.png"
-                  alt="SYRXTY GFX Services - Professional Gaming Graphics" 
-                  className="w-full h-96 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Badge variant="secondary" className="bg-gradient-cyber text-background">
-                      Professional Branding
-                    </Badge>
-                    <Badge variant="outline" className="border-primary/30 text-primary">
-                      SYRXTY GFX
-                    </Badge>
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">SYRXTY GFX Services - Professional Gaming Graphics</h3>
-                  <p className="text-muted-foreground mb-4">Custom gaming thumbnails, software showcases, and professional designs for content creators</p>
-                  
-                  <div className="flex items-center gap-6 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Eye className="w-4 h-4 text-primary" />
-                      <span>250K+ Total Views</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Heart className="w-4 h-4 text-primary" />
-                      <span>12.6K Total Likes</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-                      <span>Active Portfolio</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Portfolio Grid - Your Actual GFX Work */}
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
