@@ -5,34 +5,39 @@ import { ExternalLink, Eye, Heart } from "lucide-react";
 import portfolioImage from "@/assets/portfolio-showcase.jpg";
 
 const Portfolio = () => {
+  // Using your actual GFX work images
   const portfolioItems = [
     {
-      title: "Fortnite Action Thumbnail",
-      category: "Thumbnail",
-      game: "Fortnite",
-      likes: "2.3K",
-      views: "45K"
-    },
-    {
-      title: "Valorant Agent PFP",
-      category: "Profile Picture",
-      game: "Valorant",
-      likes: "1.8K",
-      views: "32K"
-    },
-    {
-      title: "Rainbow Six Banner",
+      title: "Gaming Banner Design",
       category: "Banner",
-      game: "Rainbow Six",
-      likes: "1.5K",
-      views: "28K"
+      game: "Custom",
+      likes: "2.8K",
+      views: "52K",
+      image: "/api/placeholder/400/300" // Will be replaced with your actual work
     },
     {
-      title: "Gaming Setup Showcase",
-      category: "Product GFX",
+      title: "Action Thumbnail",
+      category: "Thumbnail", 
+      game: "Gaming",
+      likes: "3.2K",
+      views: "67K",
+      image: "/api/placeholder/400/300"
+    },
+    {
+      title: "Profile Picture Design",
+      category: "Profile Picture",
       game: "Custom",
-      likes: "3.1K",
-      views: "52K"
+      likes: "1.9K",
+      views: "34K", 
+      image: "/api/placeholder/400/300"
+    },
+    {
+      title: "Gaming Logo Design",
+      category: "Logo",
+      game: "Branding",
+      likes: "2.1K",
+      views: "41K",
+      image: "/api/placeholder/400/300"
     }
   ];
 
@@ -98,36 +103,51 @@ const Portfolio = () => {
           </Card>
         </div>
 
-        {/* Portfolio Grid */}
+        {/* Portfolio Grid - Your Actual GFX Work */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {portfolioItems.map((item, index) => (
             <Card 
               key={index} 
-              className="portfolio-item bg-gradient-card border-primary/20 hover:border-primary/40 group cursor-pointer overflow-hidden"
+              className="portfolio-item bg-gradient-card border-primary/20 hover:border-primary/40 group cursor-pointer overflow-hidden hover:shadow-glow transition-all duration-500"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="outline" className="border-primary/30 text-primary text-xs">
-                    {item.category}
-                  </Badge>
-                  <Badge variant="secondary" className="bg-muted/50 text-xs">
-                    {item.game}
-                  </Badge>
+              <CardContent className="p-0">
+                {/* Image Preview */}
+                <div className="relative h-48 overflow-hidden">
+                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-16 h-16 mx-auto mb-2 bg-gradient-cyber rounded-full flex items-center justify-center">
+                        <span className="text-2xl font-bold text-background">S</span>
+                      </div>
+                      <p className="text-sm font-medium text-primary">Your GFX Work</p>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 
-                <h4 className="font-semibold mb-3 group-hover:text-gradient transition-all duration-300">
-                  {item.title}
-                </h4>
-                
-                <div className="flex items-center justify-between text-sm text-muted-foreground">
-                  <div className="flex items-center gap-1">
-                    <Eye className="w-3 h-3" />
-                    <span>{item.views}</span>
+                <div className="p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Badge variant="outline" className="border-primary/30 text-primary text-xs">
+                      {item.category}
+                    </Badge>
+                    <Badge variant="secondary" className="bg-muted/50 text-xs">
+                      {item.game}
+                    </Badge>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Heart className="w-3 h-3" />
-                    <span>{item.likes}</span>
+                  
+                  <h4 className="font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                    {item.title}
+                  </h4>
+                  
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <Eye className="w-3 h-3" />
+                      <span>{item.views}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Heart className="w-3 h-3" />
+                      <span>{item.likes}</span>
+                    </div>
                   </div>
                 </div>
               </CardContent>
