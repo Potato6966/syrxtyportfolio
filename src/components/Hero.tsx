@@ -52,11 +52,11 @@ const Hero = () => {
           <div className="bg-gradient-card border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-glow">
             <div className="flex items-center justify-center gap-3 mb-3">
               <Zap className="w-5 h-5 text-primary animate-pulse" />
-              <span className="text-lg font-semibold">JOIN my discord for giveaways free gfx!</span>
+              <span className="text-lg font-semibold">Have no money? NO worries!</span>
               <Zap className="w-5 h-5 text-primary animate-pulse" />
             </div>
-            <p className="text-2xl font-bold text-primary mb-2">Use code: SYRXTY</p>
-            <p className="text-sm text-muted-foreground">Get exclusive discounts on all services!</p>
+            <p className="text-lg font-bold text-primary mb-2">Join discord for my free gfx giveaway</p>
+            <p className="text-sm text-muted-foreground">Get a chance to win it for free!!</p>
           </div>
 
           {/* CTA Buttons */}
