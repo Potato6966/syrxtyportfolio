@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="bg-gradient-card border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-glow">
             <div className="flex items-center justify-center gap-3 mb-3">
               <Zap className="w-5 h-5 text-primary animate-pulse" />
-              <span className="text-lg font-semibold">Special Offer!</span>
+              <span className="text-lg font-semibold">JOIN my discord for giveaways free gfx!</span>
               <Zap className="w-5 h-5 text-primary animate-pulse" />
             </div>
             <p className="text-2xl font-bold text-primary mb-2">Use code: SYRXTY</p>
@@ -102,8 +102,8 @@ const Hero = () => {
         <div className="relative">
           <div className="relative rounded-2xl overflow-hidden shadow-card">
             <img 
-              src={heroImage} 
-              alt="Syrxty GFX Showcase" 
+              src="/lovable-uploads/0886d7e0-755c-4aaf-b4b5-2ccb87a5b2fb.png" 
+              alt="Syrxty Avatar" 
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-glow opacity-20"></div>
