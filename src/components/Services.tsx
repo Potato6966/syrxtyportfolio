@@ -78,15 +78,15 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Promo Code Banner */}
+        {/* Free GFX Giveaway Banner */}
         <div className="bg-gradient-card border border-primary/30 rounded-2xl p-6 mb-12 text-center backdrop-blur-sm shadow-glow max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-3">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-lg font-semibold text-primary">Limited Time Offer</span>
+            <span className="text-lg font-semibold text-primary">Free GFX Giveaway</span>
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
           </div>
-          <div className="text-3xl font-bold text-primary mb-2">Use Code: SYRXTY</div>
-          <p className="text-muted-foreground">Get special discounts on all services when you order!</p>
+          <div className="text-2xl font-bold text-primary mb-2">Have no money?</div>
+          <p className="text-muted-foreground">No worries! Join our Discord for a free GFX giveaway and get a chance to win premium graphics for free!</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
