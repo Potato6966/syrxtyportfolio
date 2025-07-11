@@ -12,10 +12,10 @@ const About = () => {
   ];
 
   const achievements = [
-    { icon: Users, label: "Happy Clients", value: "500+" },
-    { icon: Zap, label: "Projects Done", value: "1000+" },
+    { icon: Users, label: "Happy Clients", value: "30+" },
+    { icon: Zap, label: "Projects Done", value: "50+" },
     { icon: Target, label: "Client Satisfaction", value: "99%" },
-    { icon: Gamepad2, label: "Games Covered", value: "10+" }
+    { icon: Gamepad2, label: "Games Covered", value: "5+" }
   ];
 
   return (
@@ -98,7 +98,7 @@ const About = () => {
                     <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <div className="font-semibold">Professional GFX Designer</div>
-                      <div className="text-sm text-muted-foreground">2022 - Present</div>
+                      <div className="text-sm text-muted-foreground">2024 - Present</div>
                       <div className="text-sm text-muted-foreground mt-1">Creating custom gaming graphics for content creators</div>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const About = () => {
                     <div className="w-3 h-3 bg-primary/50 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <div className="font-semibold">Gaming Content Creator</div>
-                      <div className="text-sm text-muted-foreground">2021 - Present</div>
+                      <div className="text-sm text-muted-foreground">2024 - Present</div>
                       <div className="text-sm text-muted-foreground mt-1">Building community on TikTok and YouTube</div>
                     </div>
                   </div>
