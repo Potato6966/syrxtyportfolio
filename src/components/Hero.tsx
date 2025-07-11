@@ -44,7 +44,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl lg:text-2xl text-foreground/90 max-w-lg">
-              Professional GFX services for <span className="text-primary font-semibold">Fortnite PFP & Thumbnails</span> to elevate your profile.
+              Professional GFX designer specializing in <span className="text-primary font-semibold">Fortnite thumbnails & gaming graphics</span> to elevate your content.
             </p>
           </div>
 
@@ -52,11 +52,11 @@ const Hero = () => {
           <div className="bg-gradient-card border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-glow">
             <div className="flex items-center justify-center gap-3 mb-3">
               <Zap className="w-5 h-5 text-primary animate-pulse" />
-              <span className="text-lg font-semibold">Have no money? NO worries!</span>
+              <span className="text-lg font-semibold">Limited Budget? No Problem!</span>
               <Zap className="w-5 h-5 text-primary animate-pulse" />
             </div>
-            <p className="text-lg font-bold text-primary mb-2">Join discord for my free gfx giveaway</p>
-            <p className="text-sm text-muted-foreground">Get a chance to win it for free!!</p>
+            <p className="text-lg font-bold text-primary mb-2">Join Discord for exclusive free GFX giveaways</p>
+            <p className="text-sm text-muted-foreground">Win professional designs at no cost!</p>
           </div>
 
           {/* CTA Buttons */}
@@ -84,16 +84,16 @@ const Hero = () => {
           {/* Social Stats */}
           <div className="flex justify-center lg:justify-start gap-8 pt-4">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">10.5K</div>
-              <div className="text-sm text-muted-foreground">TikTok Followers</div>
+              <div className="text-2xl font-bold text-primary">30+</div>
+              <div className="text-sm text-muted-foreground">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">43.2K</div>
-              <div className="text-sm text-muted-foreground">Total Likes</div>
+              <div className="text-2xl font-bold text-primary">50+</div>
+              <div className="text-sm text-muted-foreground">Projects Done</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Designs Created</div>
+              <div className="text-2xl font-bold text-primary">5+</div>
+              <div className="text-sm text-muted-foreground">Games Covered</div>
             </div>
           </div>
         </div>
